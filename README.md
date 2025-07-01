@@ -1,20 +1,14 @@
-# 🌟 FoodFast - Plantilla Estática para Restaurantes 🍽️
+# 🌟 FoodFast - Plantilla Estática para Locales 🍽️
 
 📢 **Bienvenido/a a FoodFast**, una plantilla web estática para restaurantes creada con **HTML, CSS y JavaScript puro**.
 
 <p align="center">
-  <img src="img/menu-capture.png" width="500">
+  <img src="img/menu-capture.jpg" width="500">
   <br>
-  <img src="images/blogs-capture.png" width="150">
+  <img src="images/blogs-capture.jpg" width="150">
 </p>
 
 ---
-
-## 🌐 **Demostración en Vivo**
-
-¿Quieres ver la plantilla en acción antes de descargarla?
-
-🔗 **[Ver Demo en Vivo]([https://foodfast-aq.netlify.app](https://studentkevinc.github.io/baristas.github.io/cafe-pag/index.html))**
 
 ## 🚀 **Características**
 

@@ -3,9 +3,9 @@
 📢 **Bienvenido/a a FoodFast**, una plantilla web estática para restaurantes creada con **HTML, CSS y JavaScript puro**.
 
 <p align="center">
-  <img src="img/menu-capture.jpg" width="500">
+  <img src="cafe-pag/img/menu-capture.jpg" width="400">
   <br>
-  <img src="images/blogs-capture.jpg" width="150">
+  <img src="cafe-pag/img/blogs-capture.jpg" width="400">
 </p>
 
 ---

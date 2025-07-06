@@ -17,7 +17,8 @@
 ✔️ Menú de navegación interactivo  
 ✔️ Secciones personalizables (Inicio, Productos, Blog, Contacto)  
 ✔️ FAQ interactivo con JavaScript
-✔️Carrito de compras
+✔️ Carrito de compras
+✔️ Pagina de pagos
 
 ---
 

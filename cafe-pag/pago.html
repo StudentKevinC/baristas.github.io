@@ -1,0 +1,109 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Finalizar Compra</title>
+  <link rel="stylesheet" href="pago.css">
+</head>
+<!-- pago.html -->
+<h1>Finalizar Compra</h1>
+<form id="form-pago" class="form-pago">
+  <fieldset>
+    <legend>Tipo de Entrega</legend>
+    <label>
+      <input type="radio" name="entrega" value="retiro" checked>
+      Retiro en tienda
+    </label>
+    <label>
+      <input type="radio" name="entrega" value="delivery">
+      Delivery a domicilio
+    </label>
+  </fieldset>
+
+  <div id="datos-delivery" style="display:none; margin-top:10px;">
+    <label>
+      Dirección de entrega:<br>
+      <input type="text" name="direccion" placeholder="Calle, número, ciudad">
+    </label>
+    <label>
+      Teléfono de contacto:<br>
+      <input type="tel" name="telefono" placeholder="Ej: +56 9 1234 5678">
+    </label>
+  </div>
+
+  <fieldset>
+    <legend>Método de Pago</legend>
+    <label>
+      <input type="radio" name="pago" value="tarjeta" checked>
+      Tarjeta de crédito/débito
+    </label>
+    <label>
+      <input type="radio" name="pago" value="transferencia">
+      Transferencia bancaria
+    </label>
+    <label>
+      <input type="radio" name="pago" value="efectivo">
+      Efectivo (solo retiro en tienda)
+    </label>
+  </fieldset>
+
+  <div id="datos-tarjeta" style="margin-top:10px;">
+    <label>
+      Número de tarjeta:<br>
+      <input type="text" name="numero-tarjeta" maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
+    </label>
+    <label>
+      Fecha de vencimiento:<br>
+      <input type="text" name="vencimiento" maxlength="5" placeholder="MM/AA">
+    </label>
+    <label>
+      Código de seguridad:<br>
+      <input type="text" name="cvv" maxlength="4" placeholder="CVV">
+    </label>
+  </div>
+
+  <div id="datos-transferencia" style="display:none; margin-top:10px;">
+    <p>Realiza la transferencia a la siguiente cuenta:</p>
+    <ul>
+      <li>Banco: Banco Ejemplo</li>
+      <li>Cuenta: 123456789</li>
+      <li>Nombre: Baristas SPA</li>
+      <li>RUT: 12.345.678-9</li>
+      <li>Email: pagos@baristas.cl</li>
+    </ul>
+    <label>
+      Adjunta comprobante:<br>
+      <input type="file" name="comprobante">
+    </label>
+  </div>
+
+  <button type="submit">Pagar</button>
+</form>
+
+<script>
+// filepath: pago.html
+document.addEventListener('DOMContentLoaded', function() {
+  // Mostrar campos de delivery si corresponde
+  document.querySelectorAll('input[name="entrega"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      document.getElementById('datos-delivery').style.display =
+        this.value === 'delivery' ? 'block' : 'none';
+    });
+  });
+
+  // Mostrar campos según método de pago
+  document.querySelectorAll('input[name="pago"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      document.getElementById('datos-tarjeta').style.display =
+        this.value === 'tarjeta' ? 'block' : 'none';
+      document.getElementById('datos-transferencia').style.display =
+        this.value === 'transferencia' ? 'block' : 'none';
+    });
+  });
+
+  // Validación simple del formulario
+  document.getElementById('form-pago').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('¡Pago procesado con éxito!');
+    // Aquí puedes agregar la lógica real de pago o redirección
+  });
+});
+</script>

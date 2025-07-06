@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #4e342e;
+}
+
+.form-pago {
+  background: #fff;
+  max-width: 420px;
+  margin: 30px auto 0 auto;
+  padding: 30px 28px 22px 28px;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+fieldset {
+  border: 1px solid #c7b299;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  padding: 14px 12px 10px 12px;
+}
+
+legend {
+  color: #6d4c41;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  color: #5d4037;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="file"] {
+  width: 100%;
+  padding: 7px 10px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #c7b299;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #f9f6f2;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-right: 7px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background: #795548;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #5d4037;
+}
+
+#datos-delivery,
+#datos-tarjeta,
+#datos-transferencia {
+  margin-bottom: 18px;
+}
+
+ul {
+  margin: 8px 0 10px 18px;
+  padding: 0;
+  color: #6d4c41;
+  font-size: 0.97rem;
+}
+
+@media (max-width: 500px) {
+  .form-pago {
+    padding: 18px 6px 14px 6px;
+    max-width: 98vw;
+  }
+}

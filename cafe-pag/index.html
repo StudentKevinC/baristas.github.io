@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,24 +42,25 @@
 				<nav class="navbar container">
 					<i class="fa-solid fa-bars"></i>
 					<ul class="menu">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Productos</a></li>
-						<li><a href="#">Especiales</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contactanos</a></li>
+						<li><a href="#inicio">Inicio</a></li>
+						<li><a href="#productos">Productos</a></li>
+						<li><a href="#especiales">Especiales</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contactanos">Contactanos</a></li>
 					</ul>
 
 					<form class="search-form">
 						<input type="search" placeholder="Buscar..." />
-						<button class="btn-search">
+						<button class="btn-search" type="submit"> 
 							<i class="fa-solid fa-magnifying-glass"></i>
 						</button>
 					</form>
+					<div id="search-results"></div>
 				</nav>
 			</div>
 		</header>
 
-		<section class="banner">
+		<section id="inicio" class="banner">
 			<div class="content-banner">
 				<p>Café Delicioso</p>
 				<h2>100% Natural <br />Café Fresco</h2>
@@ -117,7 +118,7 @@
 				</div>
 			</section>
 
-			<section class="container top-products">
+			<section id="productos" class="container top-products">
 				<h1 class="heading-1">Mejores Productos</h1>
 
 				<div class="container-options">
@@ -664,7 +665,7 @@
 					<span>Más recientes</span>
 					<span>Mejores Vendidos</span>
 				</div>
-            <section class="container specials">
+            <section id="especiales" class="container specials">
                 <div class="container-products">
 					<!-- Producto 1 -->
                     <div class="card-product">
@@ -833,82 +834,98 @@
 
             <!-- BLOG  -->
 
-            <section class="container blogs">
-				<h1 class="heading-1">Últimos Blogs</h1>
+            <section id="blog" class="container blogs">
+    <h1 class="heading-1">Últimos Blogs</h1>
 
-				<div class="container-blogs">
-					<div class="card-blog">
-						<div class="container-img">
-							<img src="img/blog-1.jpg" alt="Imagen Blog 1" />
-							<div class="button-group-blog">
-								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-blog">
-							<h3>Entre risas y sorbos</h3>
-							<span>2 Enero 2025</span>
-							<p>Nada une más que una buena conversación y una mejor taza de café. Amig@s, una mesa compartida y ese aroma que invita a quedarse. Porque el café no solo se toma, se vive.</p>
-							<div class="btn-read-more">Leer más</div>
-						</div>
-					</div>
+    <div class="container-blogs">
+        <!-- BLOG 1 -->
+        <div class="card-blog">
+            <div class="container-img">
+                <img src="img/blog-1.jpg" alt="Imagen Blog 1" />
+                <div class="button-group-blog">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-link"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-blog">
+                <h3>Entre risas y sorbos</h3>
+                <span>2 Enero 2025</span>
+                <p>
+                    Nada une más que una buena conversación y una mejor taza de café. Amig@s, una mesa compartida y ese aroma que invita a quedarse. Porque el café no solo se toma, se vive.
+                    <span class="mas-contenido" style="display:none;">
+                        <br>
+                        En cada encuentro, el café se convierte en el protagonista de historias, anécdotas y momentos inolvidables. Descubre cómo una simple taza puede transformar tu día y acercarte a quienes más quieres.
+                    </span>
+                </p>
+                <div class="btn-read-more">Leer más</div>
+            </div>
+        </div>
 
-                    <!-- BLOG 2 -->
-                    
-					<div class="card-blog">
-						<div class="container-img">
-							<img src="img/blog-2.jpg" alt="Imagen Blog 2" />
-							<div class="button-group-blog">
-								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-blog">
-							<h3>Nueva Sede Rancagua</h3>
-							<span>27 Febrero 2025</span>
-							<p>Llegamos a Rancagua con una misión: compartir el alma del buen café. Nuestra nueva tienda combina tradición y sabor en un espacio pensado para conectar y disfrutar. Tu nuevo rincón favorito… ya abrió sus puertas.
-							</p>
-							<div class="btn-read-more">Leer más</div>
-						</div>
-					</div>
+        <!-- BLOG 2 -->
+        <div class="card-blog">
+            <div class="container-img">
+                <img src="img/blog-2.jpg" alt="Imagen Blog 2" />
+                <div class="button-group-blog">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-link"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-blog">
+                <h3>Nueva Sede Rancagua</h3>
+                <span>27 Febrero 2025</span>
+                <p>
+                    Llegamos a Rancagua con una misión: compartir el alma del buen café. Nuestra nueva tienda combina tradición y sabor en un espacio pensado para conectar y disfrutar. Tu nuevo rincón favorito… ya abrió sus puertas.
+                    <span class="mas-contenido" style="display:none;">
+                        <br>
+                        Ven a conocer nuestro menú exclusivo, participa en degustaciones y talleres, y sé parte de la comunidad cafetera que crece día a día. ¡Te esperamos con los brazos abiertos y el café listo!
+                    </span>
+                </p>
+                <div class="btn-read-more">Leer más</div>
+            </div>
+        </div>
 
-                    <!-- BLOG 3 -->
-
-					<div class="card-blog">
-						<div class="container-img">
-							<img src="img/blog-3.jpg" alt="Imagen Blog 3" />
-							<div class="button-group-blog">
-								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-blog">
-							<h3>Próximamente nuevo café</h3>
-							<span>23 Agosto 2025</span>
-							<p>Nacido de la fusión entre lo intenso y lo suave, el Café Bruma llega para sorprender. Con notas de vainilla tostada,canela y una espuma cremosa.</p>
-                            <p>Disponible desde esta semana.</p>
-							<div class="btn-read-more">Leer más</div>
-						</div>
-					</div>
-				</div>
-			</section>
-    </main>
+        <!-- BLOG 3 -->
+        <div class="card-blog">
+            <div class="container-img">
+                <img src="img/blog-3.jpg" alt="Imagen Blog 3" />
+                <div class="button-group-blog">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-link"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-blog">
+                <h3>Próximamente nuevo café</h3>
+                <span>23 Agosto 2025</span>
+                <p>
+                    Nacido de la fusión entre lo intenso y lo suave, el Café Bruma llega para sorprender. Con notas de vainilla tostada, canela y una espuma cremosa.
+                    <span class="mas-contenido" style="display:none;">
+                        <br>
+                        Este nuevo blend ha sido creado pensando en los paladares más exigentes. Atrévete a probarlo y déjate llevar por una experiencia sensorial única, solo en nuestras tiendas.
+                    </span>
+                </p>
+                <p>Disponible desde esta semana.</p>
+                <div class="btn-read-more">Leer más</div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer id="contactanos" class="footer">
 			<div class="container container-footer">
 				<div class="menu-footer">
 					<div class="contact-info">
@@ -979,7 +996,7 @@
 
 				<div class="copyright">
 					<p>
-						Desarrollado por Kevin Cornejo para el mundo &copy; 2025
+						Desarrollado por Kevin Cornejo &copy; 2025
 					</p>
 
 					<img src="img/payment.png" alt="Pagos">
@@ -1001,6 +1018,12 @@
     <span id="cart-total-amount">$0</span>
 </div>
 <button id="checkout-btn" class="checkout-btn">Finalizar compra</button>
+</div>
+
+	<!-- Modal para imagen ampliada -->
+<div id="modal-img" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:9999;">
+<span id="close-modal-img" style="position:absolute; top:30px; right:40px; font-size:2.5rem; color:#fff; cursor:pointer;">&times;</span>
+<img id="modal-img-content" src="" alt="Imagen ampliada" style="max-width:90vw; max-height:80vh; border-radius:10px; box-shadow:0 2px 16px rgba(0,0,0,0.2);">
 </div>
 
     <script src="https://kit.fontawesome.com/e9de50e2aa.js" crossorigin="anonymous"></script>

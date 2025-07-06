@@ -17,6 +17,13 @@ html {
 	box-sizing: border-box;
 }
 
+/* Id */
+
+htmml {
+	scroll-behavior: smooth;
+}
+
+
 /*             UTILIDADES             */
 
 .container {
